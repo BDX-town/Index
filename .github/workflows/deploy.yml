@@ -1,9 +1,8 @@
 name: Deploy
-
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -19,11 +18,10 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-
       - name: Build project
-        run: npm run build
+        run:
+          - npx yarn 
+          - npx yarn build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
@@ -35,7 +33,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
 
     steps:
       - name: Download artifact
