@@ -19,9 +19,7 @@ jobs:
           node-version: 16
 
       - name: Build project
-        run:
-          - npx yarn 
-          - npx yarn build
+        run: npx yarn && npx yarn build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
