@@ -1,112 +1,351 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="icon" type="image/png" href="favicon.png" />
-        <title>A propos de bdx.town</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="index.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="lang" content="fr-FR">
 
-        <meta property="og:title" content="A propos de bdx.town">
-        <meta property="og:description" content="Informations pratiques sur les services proposés par bdx.town">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://about.bdx.town">
-        <meta property="og:image" content="https://about.bdx.town/favicon.png">
-        <meta property="og:locale" content="fr_FR">
-    </head>
-    <body class="mx-auto max-w-[800px] p-3">
-        <header class="my-5">
-            <img alt="bdx.town logo" aria-hidden="true" class="ml-auto w-[50px] h-[50px]" src="logo.svg" />
-        </header>
-        <hr />
-        <section class="my-4">
-            <h1 class="text-2xl mb-2">Services proposés</h1>
-            <ul>
-                <li>
-                    <a target="_blank" href="https://bdx.town">
-                        Fédiverse 
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://plume.bdx.town">
-                        Blog
-                    </a>
-                </li>
-                <li>
-                    <a href="#email">
-                        E-mail
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section id="email">
-            <h2 class="text-xl mb-2"><img class="w-[25px] inline align-middle" src="mail-icon.jpg" /> E-mail</h2>
-            <div class="flex items-end gap-2 my-3 flex-wrap">
-                <div class="flex-1 min-w-[300px]">
-                    <p>
-                        Service E-mail donnant accès à une messagerie en ligne <code>&lt;votre-prénom&gt;@bdx.town</code> jusqu'à <strong>100Mo</strong> de stockage par utilisateur.<br />
-                        Malgré l'espace limité, ce service de messagerie offre la possibilité de chiffrer l'ensemble des mails entrant avec votre clé publique garantissant ainsi une confidentialité maximale.<br />
-                        Si besoin, faites votre demande en ce sens.
-                    </p>
-                    <ol class="my-3">
-                        <li>
-                            <strong>Création</strong> - Envoyer votre demande à <a href="mailto:admin@bdx.town">admin@bdx.town</a>
-                        </li>
-                        <li>
-                            <strong>Gestion du compte (mot de passe, alias)</strong> - <a target="_blank" href="https://postfix.bdx.town/users/login.php">https://postfix.bdx.town/users/login.php</a>
-                        </li>
-                        <li>
-                            <strong>Webmail</strong> - <a target="_blank" href="https://mail.bdx.town/">https://mail.bdx.town/</a>
-                        </li>
-                    </ol>
-                    
-                </div>
-                <img class="w-[100px]" alt="An illustration of a little monster holding mails" aria-hidden="true" src="mail.jpg" />
-            </div>
-            <div class="my-3">
-                <h3 class="text-lg mb-2">Configuration serveur sortant</h3>
-                <ul class="m-0 list-none">
-                    <li>
-                        <strong>Serveur</strong> bdx.town
-                    </li>
-                    <li>
-                        <strong>Port</strong> 587
-                    </li>
-                    <li>
-                        <strong>Sécurité</strong> STARTTLS
-                    </li>
-                    <li>
-                        <strong>Nom d'utilisateur</strong> <code>&lt;votre e-mail&gt;</code>
-                    </li>
-                    <li>
-                        <strong>Mot de passe</strong> <code>&lt;votre mot de passe&gt;</code>
-                    </li>
-                </ul>
-            </div>
-            <div class="my-3">
-                <h3 class="text-lg mb-2">Configuration serveur entrant</h3>
-                <ul class="m-0 list-none">
-                    <li>
-                        <strong>Serveur</strong> bdx.town
-                    </li>
-                    <li>
-                        <strong>Port</strong> 993
-                    </li>
-                    <li>
-                        <strong>Sécurité</strong> SSL/TLS
-                    </li>
-                    <li>
-                        <strong>Nom d'utilisateur</strong> <code>&lt;votre e-mail&gt;</code>
-                    </li>
-                    <li>
-                        <strong>Mot de passe</strong> <code>&lt;votre mot de passe&gt;</code>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <footer class="text-right text-sm">
-            Contact: <a href="mailto:admin@bdx.town">admin@bdx.town</a>
-        </footer>
-    </body>
-</html>
+    <!DOCTYPE html>
+    <html><head><link rel="icon" type="image/png" href="favicon.png"/><title>A propos de bdx.town</title><meta charSet="utf-8"/><link rel="stylesheet" href="index.css"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="lang" content="fr-FR"/><meta property="og:title" content="A propos de bdx.town"/><meta property="og:description" content="Informations pratiques sur les services proposés par bdx.town"/><meta property="og:type" content="website"/><meta property="og:url" content="https://about.bdx.town"/><meta property="og:image" content="https://about.bdx.town/favicon.png"/><meta property="og:locale" content="fr_FR"/><style>@layer t { @layer CANAILLE-0, CANAILLE-1, CANAILLE-2, CANAILLE-3, CANAILLE-4, CANAILLE-5, CANAILLE-6, CANAILLE-7, CANAILLE-8, CANAILLE-9, CANAILLE-10; }
+
+@layer t {  }
+
+@layer t { 
+    @layer CANAILLE-1 {
+      .CANAILLE-1-block {
+ --6c27e344a542f-border: unset;
+--6c27e344a542f-padding: unset;
+--6c27e344a542f-background-color: unset;
+--6c27e344a542f-box-shadow: unset;
+--6c27e344a542f-radius: unset;
+border: var(--6c27e344a542f-border);
+padding: var(--6c27e344a542f-padding);
+background-color: var(--6c27e344a542f-background-color);
+box-shadow: var(--6c27e344a542f-box-shadow);
+border-radius: var(--6c27e344a542f-radius); 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-2 {
+      .CANAILLE-2-variables {
+ --background-color: unset;
+--text-color: unset;
+--font-size: unset;
+--padding: unset;
+--border-radius: unset;
+--border: unset;
+--box-shadow: unset;
+--gap: unset; 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-2 {
+      .CANAILLE-2-button {
+ position: relative;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: var(--gap);
+background-color: var(--background-color);
+color: var(--text-color);
+font-size: var(--font-size);
+padding: var(--padding);
+border-radius: var(--border-radius);
+border: var(--border);
+box-shadow: var(--box-shadow);
+cursor: pointer; 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-3 {
+      .CANAILLE-3-error {
+ display: block;
+font-size: var(--text-50);
+color: var(--alert-100);
+font-style: normal;
+margin-top: var(--spacing-1);
+padding-left: var(--spacing-25);
+text-align: left;
+font-weight: 400; 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-4 {
+      .CANAILLE-4-variables {
+ --radius: unset;
+--border: unset;
+--font-size: unset;
+--height: unset;
+--width: unset;
+--background-color: unset;
+--label-color: unset;
+--box-shadow: unset;
+--pointer-events: auto;
+--check-opacity: 0; 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-4 {
+      .CANAILLE-4-checkbox {
+ display: inline-flex;
+align-items: center;
+gap: var(--spacing-2);
+color: var(--label-color); 
+}
+
+.CANAILLE-4-checkbox>input {
+ position: absolute;
+width: 0;
+height: 0;
+opacity: 0; 
+}
+
+.CANAILLE-4-checkbox>input + div>svg {
+ opacity: var(--check-opacity); 
+}
+
+.CANAILLE-4-checkbox>span {
+ user-select: none; 
+}
+
+.CANAILLE-4-checkbox>div {
+ transition: all 0.2s ease;
+display: flex;
+justify-content: center;
+align-items: center;
+width: var(--width);
+height: var(--height);
+box-shadow: var(--box-shadow);
+border-radius: var(--radius);
+border: var(--border);
+background-color: var(--background-color); 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-5 {
+      .CANAILLE-5-line {
+ --color: unset;
+--background: unset;
+--height: unset;
+border: none;
+background: var(--background);
+height: var(--height);
+color: var(--color); 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-6 {
+      .CANAILLE-6-link {
+ --text-decoration: unset;
+--background-color: unset;
+--font-size: unset;
+--line-height: unset;
+transition: all 0.4s ease;
+border: none;
+text-decoration: var(--text-decoration);
+background-color: var(--background-color);
+font-size: var(--font-size);
+line-height: var(--line-height);
+display: inline-block;
+padding: 1px;
+color: currentcolor;
+font-family: inherit;
+cursor: pointer; 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-7 {
+      .CANAILLE-7-radio {
+ border: none; 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-7 {
+      .CANAILLE-7-radioItem {
+ --background-color: unset;
+--border: unset;
+--border-color: unset;
+--inner-color: unset;
+--size: unset;
+--inner-size: unset;
+--text-color: unset;
+--box-shadow: unset;
+display: inline-flex;
+align-items: center; 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-7 {
+      .CANAILLE-7-radioItemInput {
+ position: relative;
+appearance: none;
+background-color: var(--background-color);
+margin: 0;
+padding: 0;
+font: inherit;
+color: var(--text-color);
+width: var(--size);
+height: var(--size);
+border: var(--border);
+box-shadow: var(--box-shadow);
+border-radius: 50%;
+margin-right: var(--spacing-2);
+flex-shrink: 0; 
+}
+
+.CANAILLE-7-radioItemInput::before {
+ position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+content: '';
+display: block;
+width: var(--inner-size);
+height: var(--inner-size);
+background-color: var(--inner-color);
+border-radius: 100%; 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-8 {
+      .CANAILLE-8-textInput {
+ --display: unset;
+--background-color: unset;
+--border: unset;
+--box-shadow: unset;
+--placeholder-color: unset;
+--text-color: unset;
+--padding-top: unset;
+--padding-bottom: unset;
+--padding-left: unset;
+--padding-right: unset;
+--border-radius: unset;
+--font-size: unset;
+--label-display: unset;
+--label-color: unset;
+--label-background-color: unset;
+--label-padding: unset;
+--label-border-radius: unset;
+--label-border: unset;
+--label-box-shadow: unset;
+--label-padding-x: unset;
+--label-padding-y: unset;
+--label-font-size: unset;
+border: 0;
+padding: 0;
+display: var(--display);
+min-width: 0; 
+}
+
+.CANAILLE-8-textInput>label {
+ position: relative;
+display: var(--display);
+width: 100%;
+align-items: center;
+padding-bottom: var(--padding-bottom);
+padding-top: var(--padding-top);
+padding-left: var(--padding-left);
+padding-right: var(--padding-right);
+border: var(--border);
+box-shadow: var(--box-shadow);
+background-color: var(--background-color);
+color: var(--text-color);
+border-radius: var(--border-radius);
+transition: box-shadow 0.2s ease; 
+}
+
+.CANAILLE-8-textInput>label>input {
+ width: 100%;
+display: var(--display);
+font-family: inherit;
+border: 0;
+font-size: var(--font-size);
+background-color: transparent;
+color: inherit; 
+}
+
+.CANAILLE-8-textInput>label>input::placeholder {
+ color: var(--placeholder-color);
+font-family: inherit; 
+}
+
+.CANAILLE-8-textInput>label>[aria-roledescription=label] {
+ display: var(--label-display);
+font-size: var(--label-font-size);
+position: absolute;
+top: 0;
+border: var(--label-border);
+left: var(--padding-left);
+transform: translateY(-50%);
+color: var(--label-color);
+background-color: var(--label-background-color);
+padding: var(--label-padding);
+border-radius: var(--label-border-radius);
+box-shadow: var(--label-box-shadow);
+padding-left: var(--label-padding-x);
+padding-right: var(--label-padding-x);
+padding-top: var(--label-padding-y);
+padding-bottom: var(--label-padding-y); 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-9 {
+      .CANAILLE-9-variables {
+ --button-background-color: unset;
+--button-border: unset;
+--button-box-shadow: unset;
+--button-padding: unset;
+--button-border-radius: unset; 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-9 {
+      .CANAILLE-9-button {
+ background-color: var(--button-background-color);
+border: var(--button-border);
+box-shadow: var(--button-box-shadow);
+padding: var(--button-padding);
+border-radius: var(--button-border-radius); 
+}
+    }
+   }
+
+@layer t { 
+    @layer CANAILLE-10 {
+      .CANAILLE-10-smallInputCSS {
+ --border-bottom: unset; 
+}
+
+.CANAILLE-10-smallInputCSS>label {
+ border: unset;
+border-top: var(--border);
+border-left: var(--border);
+border-right: var(--border);
+border-bottom: var(--border-bottom);
+transition: all 0.2s ease; 
+}
+    }
+   }
+
+@layer t {  }</style></head><body class="mx-auto max-w-[800px] p-3"><header class="my-5"><img alt="bdx.town logo" aria-hidden="true" class="ml-auto w-[50px] h-[50px]" src="logo.svg"/></header><div class="CANAILLE-5-line CANAILLE-5-R26-canaille "><svg width="100%" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="100%" y2="0" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="2, 8" stroke-dashoffset="0" stroke-linecap="square"></line></svg></div><hr/><section class="my-4"><h1 class="text-2xl mb-2">Services proposés</h1><ul><li><a target="_blank" href="https://bdx.town">Fédiverse</a></li><li><a target="_blank" href="https://plume.bdx.town">Blog</a></li><li><a href="#email">E-mail</a></li></ul></section><section id="email"><h2 class="text-xl mb-2"><img class="w-[25px] inline align-middle" src="mail-icon.jpg"/> E-mail</h2><div class="flex items-end gap-2 my-3 flex-wrap"><div class="flex-1 min-w-[300px]"><p>Service E-mail donnant accès à une messagerie en ligne <code>&lt;votre-prénom&gt;@bdx.town</code> jusqu&#x27;à <strong>100Mo</strong> de stockage par utilisateur.<br/>Malgré l&#x27;espace limité, ce service de messagerie offre la possibilité de chiffrer l&#x27;ensemble des mails entrant avec votre clé publique garantissant ainsi une confidentialité maximale.<br/>Si besoin, faites votre demande en ce sens.</p><ol class="my-3"><li><strong>Création</strong> - Envoyer votre demande à <a href="mailto:admin@bdx.town">admin@bdx.town</a></li><li><strong>Gestion du compte (mot de passe, alias)</strong> - <a target="_blank" href="https://postfix.bdx.town/users/login.php">https://postfix.bdx.town/users/login.php</a></li><li><strong>Webmail</strong> - <a target="_blank" href="https://mail.bdx.town/">https://mail.bdx.town/</a></li></ol></div><img class="w-[100px]" alt="An illustration of a little monster holding mails" aria-hidden="true" src="mail.jpg"/></div><div class="my-3"><h3 class="text-lg mb-2">Configuration serveur sortant</h3><ul class="m-0 list-none"><li><strong>Serveur</strong> bdx.town</li><li><strong>Port</strong> 587</li><li><strong>Sécurité</strong> STARTTLS</li><li><strong>Nom d&#x27;utilisateur</strong> <code>&lt;votre e-mail&gt;</code></li><li><strong>Mot de passe</strong> <code>&lt;votre mot de passe&gt;</code></li></ul></div><div class="my-3"><h3 class="text-lg mb-2">Configuration serveur entrant</h3><ul class="m-0 list-none"><li><strong>Serveur</strong> bdx.town</li><li><strong>Port</strong> 993</li><li><strong>Sécurité</strong> SSL/TLS</li><li><strong>Nom d&#x27;utilisateur</strong> <code>&lt;votre e-mail&gt;</code></li><li><strong>Mot de passe</strong> <code>&lt;votre mot de passe&gt;</code></li></ul></div></section><footer class="text-right text-sm">Contact: <a href="mailto:admin@bdx.town">admin@bdx.town</a></footer></body></html>
+

@@ -4,8 +4,7 @@
   "description": "Index page to present various services proposed by bdx.town",
   "main": "index.js",
   "scripts": {
-    "dev": "npx vite",
-    "build": "npx vite build"
+    "build": "npx ts-node build.ts > index.html && npx vite build"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +12,7 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.1",
-    "vite": "^4.2.1"
+    "vite": "^4.2.1",
+    "@bdxtown/canaille": "^1.0.0-rc7"
   }
 }
