@@ -3199,9 +3199,11 @@ __metadata:
     autoprefixer: "npm:^10.4.14"
     clean-css: "npm:^5.3.3"
     postcss: "npm:^8.4.21"
+    postcss-scss: "npm:^4.0.9"
     purgecss: "npm:^6.0.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    sass: "npm:^1.77.5"
     tailwindcss: "npm:^3.3.1"
     vite: "npm:^4.2.1"
   languageName: unknown
@@ -7991,6 +7993,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-scss@npm:^4.0.9":
+  version: 4.0.9
+  resolution: "postcss-scss@npm:4.0.9"
+  peerDependencies:
+    postcss: ^8.4.29
+  checksum: f917ecfd4b9113a6648e966a41f027ff7e14238393914978d44596e227a50f084667dc8818742348dc7d8b20130b30d4259aca1d4db86754a9c141202ae03714
+  languageName: node
+  linkType: hard
+
 "postcss-selector-parser@npm:^6.0.10, postcss-selector-parser@npm:^6.0.11":
   version: 6.0.11
   resolution: "postcss-selector-parser@npm:6.0.11"
@@ -8686,7 +8697,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.69.5":
+"sass@npm:^1.69.5, sass@npm:^1.77.5":
   version: 1.77.5
   resolution: "sass@npm:1.77.5"
   dependencies:

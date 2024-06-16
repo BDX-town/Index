@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/server';
+import fs from 'fs';
 import { PurgeCSS } from 'purgecss';
 import createCleanCss from 'clean-css';
 
@@ -7,8 +8,6 @@ import { Wrapper } from './src/Wrapper';
 import { StyleMeta } from '@bdxtown/canaille';
 
 const cleancss = new createCleanCss();
-
-
 
 async function generate() {
     const markup = `
@@ -31,7 +30,9 @@ ${ReactDOM.renderToStaticMarkup(React.createElement(Wrapper))}
           }
         ]
     })
-    console.log(markup.replace("CANAILLE_STYLE_HERE", cleancss.minify(output[0].css).styles).replace(/@layer components/g, '@layer cmps'))
+
+    fs.writeFileSync('index.html', markup);
+    fs.writeFileSync('ssr.css', cleancss.minify(output[0].css).styles.replace(/@layer components/g, '@layer cmps'));
 }
 
 generate();

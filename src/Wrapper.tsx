@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom/server';
-import { StyleMeta } from '@bdxtown/canaille';
 import { Body } from './Body';
+
 
 export const Wrapper = () => {
     return (
@@ -10,7 +9,8 @@ export const Wrapper = () => {
                     <link rel="icon" type="image/png" href="favicon.png" />
                     <title>A propos de bdx.town</title>
                     <meta charSet="utf-8" />
-                    <link rel="stylesheet" href="index.css" />
+                    <link rel="stylesheet" href="index.scss" />
+                    <link rel="stylesheet" href="ssr.css" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="lang" content="fr-FR" />
 
@@ -20,11 +20,8 @@ export const Wrapper = () => {
                     <meta property="og:url" content="https://about.bdx.town" />
                     <meta property="og:image" content="https://about.bdx.town/favicon.png" />
                     <meta property="og:locale" content="fr_FR" />
-                    <style>
-                        CANAILLE_STYLE_HERE
-                    </style>
                 </head>
-               <body className="mx-auto max-w-[800px] p-3">
+               <body className="mx-auto max-w-[800px] p-3 bg-additional-primary">
                 <Body />
                </body>
             </html>
