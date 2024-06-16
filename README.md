@@ -22,7 +22,7 @@
 
 To run or contribute to this project, you need to have the following installed:
 
-- Node.js (v14 or higher)
+- Node.js (v18 or higher)
 - Yarn (v4.0.2 or higher)
 
 ### Installation
