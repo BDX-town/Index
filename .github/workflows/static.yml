@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 16
       - name: Build project
-        run: npx yarn && npx yarn build
+        run: corepack enable && npx yarn && npx yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
