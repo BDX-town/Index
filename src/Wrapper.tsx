@@ -5,7 +5,7 @@ export const Wrapper = () => {
   return (
     <html>
       <head>
-        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="icon" type="image/png" href="logo.svg" />
         <title>A propos de bdx.town</title>
         <meta charSet="utf-8" />
         <link rel="stylesheet" href="index.scss" />
